@@ -43,17 +43,23 @@
 -------------------------------------------------------------- */
 
 *, *:after, *:before {
-	-webkit-boxsizing: border-box;
-	-moz-boxsizing: border-box;
-	-o-boxsizing: border-box;
-	-ms-boxsizing: border-box;
-	boxsizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 }
 
 /*--------------------------------------------------------------
 5.0 - OBJECTS
 -------------------------------------------------------------- */
+
+/* --FRAMEWORK --*/
+
+.img-responsive {
+	max-width: 100%;
+}
 
 .wrapper {
 	width: 80%;
@@ -208,4 +214,19 @@
 }.col-lg-12 {
 	width: calc(100% * 12/12);
 }
+}
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS
+-------------------------------------------------------------- */
+ 
+#bg-building {
+	background-image: url("../img/green-building2x.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+}
+
+.col-lg-1:first-child, .col-lg-1:nth-child(2) {
+	background-clip: border-box;
 }
