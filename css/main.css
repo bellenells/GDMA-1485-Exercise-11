@@ -59,7 +59,6 @@
 
 .img-responsive {
 	max-width: 100%;
-	height: auto;
 }
 
 .wrapper {
@@ -81,6 +80,10 @@
 	float: left;
 	padding: 0 10px;
 	margin-bottom: 20px;
+	-webkit-background-clip: content-box;
+	-o-background-clip: content-box;
+	-moz-background-clip: content-box;
+	-ms-background-clip: content-box;
 	background-clip: content-box;
 }
 
@@ -226,9 +229,21 @@
 	background-image: url("../img/green-building2x.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
+	-webkit-background-origin: content-box;
+	-o-background-origin: content-box;
+	-moz-background-origin: content-box;
+	-ms-background-origin: content-box;
 	background-origin: content-box;
 }
 
-.col-lg-1:first-child, .col-lg-1:nth-child(2) {
-	background-clip: border-box;
+
+#bg-building2 {
+	background-image: url("../img/green-building2x.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-background-origin: content-box;
+	-o-background-origin: content-box;
+	-moz-background-origin: content-box;
+	-ms-background-origin: content-box;
+	background-origin: padding-box;
 }
